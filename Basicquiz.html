@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> QUIZ </title>
+</head>
+<body>
+
+Q1: How many Bits makes one Byte?<br>
+<input type="radio" name="question1" >6<br>
+<input type="radio" name="question1" id="correct1">8<br>
+<input type="radio" name="question1" >10<br>
+<input type="radio" name="question1" >12<br>
+
+Q2: Which of the following is not an example of an Operating system?<br>
+<input type="radio" name="question2" >BSD Unix<br>
+<input type="radio" name="question2" >Windows 98<br>
+<input type="radio" name="question2" id="correct2">Microsoft Office XP<br>
+<input type="radio" name="question2" >Red Hat Linux<br>
+
+Q3: Which of the following is used to manage DataBase?<br>
+<input type="radio" name="question3" >Operating System<br>
+<input type="radio" name="question3" >Compiler<br>
+<input type="radio" name="question3" id="correct3">DBMS<br>
+<input type="radio" name="question3" >None of the above<br>
+
+Q4: Which of the following is an example of non-volatile memory?<br>
+<input type="radio" name="question4" >Cache memory<br>
+<input type="radio" name="question4" >RAM<br>
+<input type="radio" name="question4" id="correct4">ROM<br>
+<input type="radio" name="question4" >None of the above<br>
+
+Q5: What type of process creates a smaller file that is faster to transfer over the internet?<br>
+<input type="radio" name="question5" id="correct5">Compression<br>
+<input type="radio" name="question5" >Fragmentation<br>
+<input type="radio" name="question5" >Encapsulation<br>
+<input type="radio" name="question5" >Polymorphism<br>
+
+<input type="submit" name="submit" value="submitQuiz" onclick="result()">
+<script type="text/javascript">
+    function result(){
+        var score=0;
+        if (document.getElementById('correct1').checked)
+        {
+            score++;
+        }
+        if (document.getElementById('correct2').checked)
+        {
+            score++;
+        }
+        if (document.getElementById('correct3').checked)
+        {
+            score++;
+        }
+        if (document.getElementById('correct4').checked)
+        {
+            score++;
+        }
+        if (document.getElementById('correct5').checked)
+        {
+            score++;
+        }
+        document.write("Your Score is "+score);
+    }
+</script>
+</body>
+</html>
